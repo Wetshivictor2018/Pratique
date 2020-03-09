@@ -21,3 +21,20 @@ puts mon_booleen
 if mon_booleen
     puts "Okay"
 end
+
+
+
+
+
+
+
+
+class utilisateur
+    attr_accessor :prenom
+end
+
+
+mon_utilisateur = utilisateur.new
+mon_utilisateur.prenom = "Victor"
+
+puts mon_utilisateur.prenom
