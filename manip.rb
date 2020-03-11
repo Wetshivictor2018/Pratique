@@ -27,5 +27,26 @@ vic = Utilisateur.new
 vic.prenom  = "Victor"
 lolo.amis= [pat]
 
-
+lolo.amis = [nad, mad, vic, pat]
 puts lolo.est_amis_avec?("Patrice")
+
+puts "____________________________"
+puts "____________________________"
+
+
+class Joeurs
+  attr_accessor :nom, :origin
+
+  def initialize(nom, sexe, level)
+    if sexe == "h" && level == "p"
+      @nom = "Monsieur " +nom+ " joeur pro"
+    else
+      @nom = "Madame " +nom+ " joeuse amateur"
+    end
+  end
+end
+
+messi = Joeurs.new("Leo", "h", "p")
+serena = Joeurs.new("Gomez", "f", "a")
+puts messi.nom
+puts serena.nom
